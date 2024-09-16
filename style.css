@@ -1,18 +1,23 @@
-*{
+* {
+    /* reset do CSS */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: titilium web , sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
-:root{
-    --gray-800: #1e293b;
+/* 1rem = 16px */
+/* 40px = 2.5rem */
+:root {
+    --gray-800: #1E293B;
     --gray-600: #475569;
     --gray-400: #94a3b8;
     --gray-200: #e2e8f0;
     --purple: #7c3aed;
     --white: #fff;
 }
-header{
+/* numero = 20 */
+/* print(numero) */
+header {
     background-image: url(./imagens/bg-mobile.png);
     background-size: cover;
     height: 8.375rem;
@@ -21,10 +26,10 @@ header{
     align-items: center;
     margin-bottom: 3.7rem;
 }
-main{
+main {
     padding-inline: 1.5rem;
 }
-.descricao{
+.descricao {
     margin-bottom: 2.5rem;
 }
 .descricao h1{
@@ -32,50 +37,49 @@ main{
     margin-bottom: 1rem;
     font-size: 1.5625rem;
 }
-.descricao p{
+.descricao p {
     font-size: 0.8125rem;
     color: var(--gray-600);
 }
-.input-box{
+.input-box {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 1rem;
 }
-.input-box div{
+.input-box div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.login label{
+.login label {
     font-size: 0.875rem;
     color: var(--gray-800);
     font-weight: 600;
 }
-.login input{
+.login input {
     padding: 1rem 0.75rem;
     border: 1px solid var(--gray-200);
     border-radius: 0.25rem;
     color: var(--gray-800);
 }
-.login input::placeholder{
+.login input::placeholder {
     color: var(--gray-400);
 }
 .login input:hover,
 .login input:focus{
     outline: 1px solid var(--purple);
 }
-.login a{
+.login a {
     color: var(--purple);
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 600;
 }
-.login a:hover{
+.login a:hover {
     text-decoration: underline;
 }
-
-.login button{
+.login button {
     margin-top: 1rem;
     margin-bottom: 2rem;
     padding-block: 1rem;
@@ -83,16 +87,32 @@ main{
     background: var(--purple);
     border: none;
     border-radius: 0.25rem;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--white);
 }
-
-.login > p{
-    color: var(--gray-600);
+.login > p {
+    color: var(--gray-600);    
 }
-
-.login > p a{
+.login > p a {
     font-weight: 700;
     font-size: 1rem;
 }
+
+@media(min-width: 1000px) {
+    header {
+        background: none;
+        justify-content: flex-start;
+        padding-inline: 7rem;
+    }
+
+    header img {
+        width:10rem;
+    }
+
+    main {
+        padding-inline: 7rem;
+    }
+
+}
+/* nome da cor, rgb, rgba, hex, hsl, hwb */
